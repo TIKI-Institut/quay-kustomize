@@ -11,7 +11,7 @@ secretGenerator:
   - name: quay-config-secret
     behavior: merge
     files:
-      - ./bundle/config.yaml
+      - ../overlays/dev/config.yaml
       # Uncomment if you want to add your own SSL certificates
       # - ./bundle/ssl.cert
       # - ./bundle/ssl.key

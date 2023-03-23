@@ -6,6 +6,7 @@ metadata:
   labels:
     quay-component: quay-app
 spec:
+  storageClassName: ceph-fs
   accessModes:
     - ReadWriteOnce
   resources:

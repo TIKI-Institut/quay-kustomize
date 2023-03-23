@@ -12,6 +12,13 @@ matcher:
   run: ""
   migrations: true
   indexer_addr: clair-indexer
+notifier:
+  indexer_addr: http://clair-indexer:8080/
+  matcher_addr: http://clair-matcher:8080/
+  connstring: host=clair-postgres port=5432 dbname=clair user=postgres password=postgres sslmode=disable
+  migrations: true
+  delivery_interval: 1m
+  poll_interval: 5m
 # tracing and metrics
 trace:
   name: "jaeger"

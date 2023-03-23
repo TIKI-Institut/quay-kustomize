@@ -26,7 +26,7 @@ spec:
         #     claimName: quay-datastorage
       containers:
         - name: quay-app
-          image: quay.io/projectquay/quay:qui-gon
+          image: quay.io/projectquay/quay:3.8.4
           env:
             - name: QE_K8S_CONFIG_SECRET
               # FIXME(alecmerdler): Using `vars` is kinda ugly because it's basically templating, but this needs to be the generated `Secret` name...

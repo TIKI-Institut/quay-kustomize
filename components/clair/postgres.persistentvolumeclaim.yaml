@@ -5,6 +5,7 @@ metadata:
   labels:
     quay-component: clair-postgres
 spec:
+  storageClassName: ceph-fs
   accessModes:
     - ReadWriteOnce
   resources:
