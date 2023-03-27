@@ -6,12 +6,11 @@ components:
   - ../components/postgres
   - ../components/redis
   - ../components/clair
-  - ../components/storage
+  # - ../components/storage
 secretGenerator:
   - name: quay-config-secret
     behavior: merge
     files:
-      - ../overlays/dev/config.yaml
-      # Uncomment if you want to add your own SSL certificates
+      - ./bundle/config.yaml
       # - ./bundle/ssl.cert
       # - ./bundle/ssl.key

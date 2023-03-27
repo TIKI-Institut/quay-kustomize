@@ -3,7 +3,20 @@ FEATURE_MAILING: false
 FEATURE_SUPER_USERS: true
 SUPER_USERS:
 - admin
-PREFERRED_URL_SCHEME: https
+PREFERRED_URL_SCHEME: http
 REGISTRY_TITLE: Quay
 REGISTRY_TITLE_SHORT: Quay
-SERVER_HOSTNAME: quay-app.quay-enterprise
+SERVER_HOSTNAME: quay-test.tiki-dsp.tech
+DISTRIBUTED_STORAGE_CONFIG:
+    default:
+    - RadosGWStorage
+    - access_key: quay-test
+      secret_key: tiki1234
+      hostname: s3.tiki-dsp.tech
+      bucket_name: quay-test
+      port: 443
+      is_secure: true
+      storage_path: /quay-datastorage/registry
+DISTRIBUTED_STORAGE_DEFAULT_LOCATIONS: []
+DISTRIBUTED_STORAGE_PREFERENCE:
+    - default
