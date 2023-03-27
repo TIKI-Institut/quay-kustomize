@@ -10,8 +10,8 @@ SERVER_HOSTNAME: quay-test.tiki-dsp.tech
 DISTRIBUTED_STORAGE_CONFIG:
     default:
     - RadosGWStorage
-    - access_key: quay-test
-      secret_key: tiki1234
+    - access_key: <REDACTED>
+      secret_key: <REDACTED>
       hostname: s3.tiki-dsp.tech
       bucket_name: quay-test
       port: 443
